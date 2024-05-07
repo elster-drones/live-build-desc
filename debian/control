@@ -4,6 +4,7 @@ Priority: optional
 Maintainer: Vyatta Package Maintainers <DL-vyatta-help@att.com>
 Build-Depends: debhelper (>= 9), lsb-release, apt
 Standards-Version: 3.9.6
+Homepage: https://github.com/gollub/live-build-desc
 
 Package: live-build-desc-hooks
 Architecture: all

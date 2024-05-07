@@ -1,12 +1,47 @@
-live-build-desc (0.8) unstable; urgency=medium
+live-build-desc (0.5) unstable; urgency=medium
 
-  [ Nicholas Brown ]
-  * Generate files for Debian Bullseye
+  [ Jan Blunck ]
+  * Generate debian/control based on $CODENAME.deps file
+  * Add empty lintian-overrides file for live-build-desc-hooks
 
- -- Colin Docherty <colin.docherty@intl.att.com>  Wed, 01 Sep 2021 01:11:42 -0700
+  [ Luca Boccassi ]
+  * Remove +x from d/jessie.deps list
+  * Add stretch list
+  * Add build-dependency on apt for lsb_release
+  * Fall back to parsing /etc/debian_version if lsb fails
+  * Fix typo in stretch.deps
+  * Update Stretch dependency list
+  * Update Stretch dependency list
+  * Update Stretch dependency list
+  * Update Stretch dependency list
 
-live-build-desc (0.7) unstable; urgency=medium
+ -- Luca Boccassi <lboccass@brocade.com>  Wed, 31 May 2017 12:32:04 +0100
 
-  * Import DANOS Master
+live-build-desc (0.4) unstable; urgency=medium
 
- -- Nicholas Brown <nick.brown@att.com>  Wed, 13 Nov 2019 12:28:58 +0000
+  [ Luca Boccassi ]
+  * Remove liblognorm1 and rsyslog dependencies
+
+  [ Eugene Tan ]
+
+ -- Eugene Tan <tane@brocade.com>  Wed, 13 Jul 2016 15:18:46 -0700
+
+live-build-desc (0.3) unstable; urgency=low
+
+  * Fix lintian binary warnings and errors
+  * Fix script-not-executable livebuild_pre_run
+
+ -- Daniel Gollub <dgollub@brocade.com>  Mon, 29 Jun 2015 15:07:01 +0200
+
+live-build-desc (0.2) unstable; urgency=low
+
+  * Fix lintian warning about absent misc:Depends
+  * Fix lintian warning about hardcoded libc depends
+
+ -- Daniel Gollub <dgollub@brocade.com>  Mon, 29 Jun 2015 14:44:57 +0200
+
+live-build-desc (0.1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Daniel Gollub <dgollub@brocade.com>  Mon, 29 Jun 2015 14:03:11 +0200
