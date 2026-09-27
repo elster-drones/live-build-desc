@@ -1,5 +1,7 @@
 # Additional dependencies from live-build
 dctrl-tools
+shim-signed
+grub-efi-amd64-signed
 
 # This is generated list from debootstrap --print-debs trixie amd64
 

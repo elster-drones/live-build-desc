@@ -24,6 +24,8 @@ override_dh_gencontrol:
 generate_%:
 	echo "# Additional dependencies from live-build" > debian/$(subst generate_,,$@).deps
 	echo "dctrl-tools" >> debian/$(subst generate_,,$@).deps
+	echo "shim-signed" >> debian/$(subst generate_,,$@).deps
+	echo "grub-efi-amd64-signed" >> debian/$(subst generate_,,$@).deps
 	echo "" >> debian/$(subst generate_,,$@).deps
 	echo "# This is generated list from debootstrap --print-debs $(subst generate_,,$@) amd64" >> debian/$(subst generate_,,$@).deps
 	sudo debootstrap --print-debs $(subst generate_,,$@) amd64 | grep -v "I:" | grep -v "gpgv:" | tr ' ' '\n' | sort | uniq >> debian/$(subst generate_,,$@).deps
